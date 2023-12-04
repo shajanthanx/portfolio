@@ -21,6 +21,23 @@ const Home = () => {
   const handleMessageInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value);
 
 
+  const downloadResume = () => {
+    const resumePath = "./Images/Dilhara.pdf";
+    
+    fetch(resumePath)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "Dilhara_Abeysekera_Resume.pdf"; // Set the desired file name
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+      })
+      .catch((error) => console.error("Error downloading resume:", error));
+  };
   
   return (
     <div className="w-full px-2 sm:px-4 md:px-8">
@@ -82,7 +99,7 @@ const Home = () => {
             </div>
           </div>
           <div className="header-cta flex flex-row items-start justify-start gap-4 w-full">
-            <button className=" text-white text-base font-semibold  bg-violet-600 rounded-lg justify-center items-center gap-3 flex flex-row-reverse px-3 py-2">
+            <button onClick={downloadResume} className=" text-white text-base font-semibold  bg-violet-600 rounded-lg justify-center items-center gap-3 flex flex-row-reverse px-3 py-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
