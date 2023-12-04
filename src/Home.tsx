@@ -61,7 +61,7 @@ const Home = () => {
         id="home"
       >
         <div className="header-img w-full items-center flex justify-center md:w-1/2 pb-8 md:pb-0 p-4">
-          <img src="../images/Group 1.png" alt="Header Image" className="" />
+          <img src="./images/Group 1.png" alt="Header Image" className="" />
         </div>
         <div className="header-content w-full items-center flex justify-center md:w-1/2 flex-col p-1 sm:p-5">
           <div className="header-text w-full flex flex-col justify-start items-start">
@@ -122,21 +122,21 @@ const Home = () => {
         <div className="w-full flex flex-col md:flex-row items-center gap-8  justify-center md:gap-24 md:py-16">
           <div className="flex flex-row items-center justify-center gap-8 md:gap-24">
             <div className="flex flex-col items-center justify-center gap-2">
-              <img src="../images/html.png" alt="" className="img h-24 w-24" />
+              <img src="./images/html.png" alt="" className="img h-24 w-24" />
               <div>HTML</div>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
-              <img src="../images/css-3.png" alt="" className="img h-24 w-24" />
+              <img src="./images/css-3.png" alt="" className="img h-24 w-24" />
               <div>CSS</div>
             </div>
           </div>
           <div className="flex flex-row items-center justify-center gap-8 md:gap-24">
             <div className="flex flex-col items-center justify-center gap-2">
-              <img src="../images/js.png" alt="" className="img h-24 w-24" />
+              <img src="./images/js.png" alt="" className="img h-24 w-24" />
               <div>JavaScript</div>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
-              <img src="../images/figma.png" alt="" className="img h-24 w-24" />
+              <img src="./images/figma.png" alt="" className="img h-24 w-24" />
               <div>Figma</div>
             </div>
           </div>
@@ -152,7 +152,7 @@ const Home = () => {
         </div>
         <div className="projects-section flex justify-center items-center flex-col md:flex-row gap-8 md:gap-16 px-4 md:px-0">
           <div className="container bg-[#63A58D] p-4 rounded-md">
-            <img src="../images/image 12.png" alt="" />
+            <img src="./images/image 12.png" alt="" />
             <div className="type text-xl font-medium md:text-2xl pt-2">
               UI/UX Design
             </div>
@@ -163,11 +163,11 @@ const Home = () => {
               <div className="text-white text-base md:text-xl font-light underline ">
                 Visit
               </div>
-              <img src="../images/figma (1).png" alt="" className="w-6 h-6" />
+              <img src="./images/figma (1).png" alt="" className="w-6 h-6" />
             </div>
           </div>
           <div className="container bg-[#CA7984] p-4 rounded-md">
-            <img src="../images/image 11.png" alt="" />
+            <img src="./images/image 11.png" alt="" />
             <div className="type text-xl font-medium md:text-2xl pt-2">
               Image search Website
             </div>
@@ -178,7 +178,7 @@ const Home = () => {
               <div className="text-white text-base md:text-xl font-light underline ">
                 Visit
               </div>
-              <img src="../images/figma (1).png" alt="" className="w-6 h-6" />
+              <img src="./images/figma (1).png" alt="" className="w-6 h-6" />
             </div>
           </div>
         </div>
